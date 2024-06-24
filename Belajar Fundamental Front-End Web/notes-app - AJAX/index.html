@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+
+  <!-- Icon -->
+  <link rel="icon" href="favicon.png" sizes="512x512" />
+
+  <!-- Style -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=noto+sans">
+
+</head>
+
+
+<body>
+  <header>
+    <app-bar></app-bar>
+  </header>
+
+  <main>
+    <div class="container">
+      <section-with-title id="note" class="note" title="Uji Coba">
+        <!-- Input Bar Form -->
+        <input-bar></input-bar>
+        
+        <!-- Note List Container -->
+        <div id="noteListContainer" class="note-list-container">
+          <div class="placeholder note-loading">Loading</div>
+          <note-error></note-error>
+          <note-list></note-list>
+        </div>  
+      </section-with-title>      
+    </div>
+  </main>
+
+  <footer>
+      <footer-bar></footer-bar>
+  </footer>
+</body>
+
+</html>
